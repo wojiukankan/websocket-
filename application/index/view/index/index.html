@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    var ws = new WebSocket('ws://127.0.0.1:8282');
+    ws.onopen = function () {
+        if (ws.bufferedAmount == 0) {
+            ws.send(JSON.stringify({
+                    'action': 'replyWelcome',
+                    'openid': '2',
+                    'controller': 'index',
+                }
+            ));
+        }
+    };
+</script>
+</html>
