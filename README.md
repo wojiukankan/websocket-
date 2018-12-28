@@ -5,6 +5,7 @@
 ## 目录结构
 
 初始的目录结构如下：
+
 ~~~
 www  WEB部署目录（或者子目录）
 ├─application                       应用目录
@@ -16,7 +17,8 @@ www  WEB部署目录（或者子目录）
 │  │  │  ├─start_gateway.php
 │  │  │  ├─start_register.php
 ~~~
-##工作流程
+
+## 工作流程
 
 ```mermaid
 graph LR
@@ -26,7 +28,8 @@ graph LR
     server-- curl --> ws
 ```
 
-##使用方法
+## 使用方法
+
 - composer安装getway-worker for win
 ~~~
 composer require workerman/gateway-worker-for-win
